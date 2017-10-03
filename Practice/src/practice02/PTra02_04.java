@@ -17,5 +17,6 @@ public class PTra02_04 {
 		// ★ 以下のプログラムで50が出力されるようにしてください
 		System.out.println(d_num);	// ※※ この行は修正しないでください
 
+
 	}
 }

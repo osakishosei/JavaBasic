@@ -21,6 +21,12 @@ public class PTra02_10 {
 		 * ※ 日本円には小数点がありませんので、整数の値で出力してください(少数部分は切り捨て)
 		 * ※ プログラムは何行書いても良いです
 		 */
+		double total1  =moneyInHand-(coffee*2*1.08);
+		int money1 =(int)total1;
+         System.out.println(money1);
+        double total2 = moneyInHand-(snack*1.08);
+        int money2 =(int)total2;
+		 System.out.println(money2);
 
 	}
 }
