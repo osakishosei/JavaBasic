@@ -27,10 +27,11 @@ public class PTra10_03 {
 		java.util.Scanner scanner = new java.util.Scanner(System.in);
 
 		// ★ 入力された値を、String型の変数lineに格納してください
-		String line = scanner.nextLine();
+		String line = scanner.next();
+
 
 		// ★ 変数lineに格納されている値を','で区切り、配列にしてください（Stringクラスのメソッドを使用します）
-          String[]s = {line,line,line,line};
+		 String[] s = line.split(",",0);
 
 		// ★ 配列にした値を、usの各フィールドに代入してください
           us.userId = Integer.parseInt(s[0]);
