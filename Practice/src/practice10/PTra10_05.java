@@ -15,7 +15,7 @@ public class PTra10_05 {
 	 * 		Car
 	 * フィールド
 	 * 		serialNo		:	int型
-	 * 		color			：	String型
+	 * 		color		：	String型
 	 * 		gasoline		：	int型
 	 * メソッド
 	 * 		戻り値(int)、メソッド名(run)、引数(なし)
@@ -45,25 +45,35 @@ public class PTra10_05 {
 		 * ★ 変数carに格納されているインスタンスメソッドrunを使って、目的地まで進んでください
 		 * ★ 先にガソリンがなくなった場合は、「目的地に到達できませんでした」を出力してください
 		 * ★ 目的地についた時点で「目的地にまでn時間かかりました。残りのガソリンは、xリットルです」を出力してください
-		 * ※n：runメソッドを実行した回数, xは残りのガソリンの数です
+		 * ※：runメソッドを実行した回数n, xは残りのガソリンの数です
 		 */
+		int sum=0;
+		int n =0;
 
-         for(int n = 1;)
+		while(true) {
+			n++;
+			int k = car.run();
+			sum+=k;
 
-         if(distance - car.run()<=0) {
-       	 System.out.println("「目的地にまで"+"時間かかりました。残りのガソリンは、"+"xリットルです」");
-         } else if(-1==car.run()) {
-        	 System.out.println("「目的地に到達できませんでした」");
-         }
+			if(-1==k) {
+				System.out.println("「目的地に到達できませんでした」");
+				break;
+			}
 
-
-    }
-
-
-
-
-
-
-
-
+			if(distance<sum) {
+				int x = 50 - n;
+				System.out.println("「目的地にまで"+n+"時間かかりました。残りのガソリンは、"+x+"リットルです」");
+				break;
+			}
+        }
+	}
 }
+
+
+
+
+
+
+
+
+
