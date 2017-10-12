@@ -7,17 +7,20 @@
 package practice15.ptra15;
 
 import practice15.common.Java2Month;
-import practice15.common.Room;
 
 public class PTra15_02 {
 	public static void main(String[] args) {
 
-		Room room = new Java2Month();
+		Java2Month room = new Java2Month();
 
 		// roomに格納されたJava2MonthインスタンスのgetCurriculumメソッドを呼び出してください
+		String[]data = room.getCurriculum();
 
 
 		// 取得したカリキュラム情報を全て出力してください
+		for(String a : data)
+		System.out.println(a);
+
 
 	}
 }
